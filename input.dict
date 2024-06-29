@@ -1,0 +1,26 @@
+i have installed montreal forced aligner in conda environment.
+
+i have files:
+audio in mandarin: C:\Users\user\Desktop\mfaProj\audio\2024-06-28 10-03-00.wav
+transcripts in pinyin: C:\Users\user\Desktop\mfaProj\transcripts\2024-06-28 10-03-00.txt
+output directory: C:\Users\user\Desktop\mfaProj\aligned
+acoustic model file: C:\Users\user\Documents\MFA\pretrained_models\acoustic\mandarin_mfa.zip
+dictionary file: C:\Users\user\Desktop\mfaProj\dictionary
+
+conda activate mfa_env  is executed
+
+cd C:\Users\user\Desktop\mfaProj is executed
+
+how to extract phonemes and their timing from the audio file through mfa_env?
+
+
+
+https://github.com/MontrealCorpusTools/mfa-models/blob/main/dictionary/mandarin/pinyin/mandarin_pinyin.dict
+
+mfa models download acoustic mandarin_mfa
+
+mfa align --clean --output_format json "C:\\Users\\user\\Desktop\\mfaProj\\audio" "C:\\Users\\user\\Desktop\\mfaProj\\dictionary\\mandarin_pinyin.dict" "C:\\Users\\user\\Documents\\MFA\\pretrained_models\\acoustic\\mandarin_mfa.zip" "C:\\Users\\user\\Desktop\\mfaProj\\aligned"
+
+
+
+
